@@ -88,7 +88,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <form action="{{route('logout')}}" method="POST">
+                      <form action="{{route('back.logout')}}" method="POST">
                         @csrf
                         {{-- <i class="bx bx-power-off me-2"></i> --}}
                         {{-- <button type="submit" class="align-middle">Log Out</button> --}}

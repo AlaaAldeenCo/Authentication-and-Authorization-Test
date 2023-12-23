@@ -27,9 +27,10 @@ Route::prefix('front')->name('front.')->group(function () {
 // Admin Design
 Route::prefix('back')->name('back.')->group(function () {
     Route::get('/', BackHomeController::class)->middleware('admin')->name('index');
-    Route::view('/login', 'back.auth.login');
-    Route::view('/register', 'back.auth.register');
-    Route::view('/forget-password', 'back.auth.forget-password');
+    // Route::view('/login', 'back.auth.login');
+    // Route::view('/register', 'back.auth.register');
+    // Route::view('/forget-password', 'back.auth.forget-password');
+    require __DIR__.'/adminAuth.php';
 
 });
 
